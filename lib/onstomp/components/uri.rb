@@ -25,6 +25,6 @@ end
 
 # Add the new URI classes to `URI`'s set of known schemes.
 module ::URI
-  register_scheme 'STOMP' = OnStomp::Components::URI::STOMP
-  register_scheme 'STOMP+SSL' = OnStomp::Components::URI::STOMP_SSL
+  register_scheme 'STOMP', OnStomp::Components::URI::STOMP
+  register_scheme 'STOMP+SSL', OnStomp::Components::URI::STOMP_SSL
 end
